@@ -1,0 +1,90 @@
+.EstudiosContainer {
+  margin-left: 200px;
+  height: 100vh;
+  background-color: #4d3043;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+.parrafo1textTitulo {
+  text-transform: uppercase;
+  color: #FA61CC; 
+  font-weight: bold;
+  font-size: 100px;
+  border-bottom: -20px;
+}
+
+.parrafo1textCentro{
+  text-transform: capitalize;
+  color: white; 
+}
+.parrafo1textFecha{
+  color: rgb(15, 118, 110);
+  font-weight: bold;
+  font-size: 35px;
+}
+.Titulo{
+  color: #FA61CC;
+  font-size: 70px;
+  font-weight: bold;
+}
+.EstudiosContainer {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna */
+  grid-template-rows: repeat(2, auto); /* Altura automática para cada fila */
+  gap: 20px; /* Espacio entre las celdas del grid */
+}
+
+/* Estilos para Estudios1 */
+.Estudios1 {
+  display: grid;
+  gap: 5px; /* Espacio entre las celdas del grid */
+  border-bottom: 2px solid #614E5B; /* Color y grosor del borde inferior */
+}
+
+.Estudios2 {
+  display: grid;
+  gap: 5px; /* Espacio entre las celdas del grid */
+  border-bottom: 2px solid #614E5B; /* Color y grosor del borde inferior */
+
+}
+.parrafo1textTitulo {
+  grid-area: 1 / 1 / 4 / 2; /* Empieza en la fila 1, columna 1 y termina en la fila 4, columna 2 */
+
+}
+
+.parrafo1textFecha {
+  grid-area: 1 / 2 / 4 / 3; /* Empieza en la fila 1, columna 2 y termina en la fila 4, columna 3 */
+}
+
+.parrafo1textCentro {
+  grid-area: 3 / 1 / 4 / 3; /* Empieza en la fila 4, columna 1 y termina en la fila 5, columna 3 */
+}
+
+@media only screen and (max-width: 600px) {
+  .EstudiosContainer {
+    background-color: #4d3043;
+    padding: 20px; /* Reducir el padding para dar más espacio al texto */
+    margin-bottom: 10px;
+    max-width: 60%; /* Ancho máximo del contenedor */
+    text-align: center; /* Centrar horizontalmente */
+  }
+  .Titulo {
+    font-size: 40px;
+  }
+
+  .Estudios1,
+  .Estudios2 {
+    display: block;
+  }
+
+  .parrafo1textTitulo {
+    font-size: 10px;
+  }
+
+  .parrafo1textCentro,
+  .parrafo1textFecha {
+    font-size: 10px;
+  }
+}

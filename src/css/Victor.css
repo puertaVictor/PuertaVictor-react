@@ -1,0 +1,95 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+.VictorPage {
+  margin-left: 200px;
+  height: 100vh;
+  background-color: #4d3043;
+  color: #FA61CC;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  animation-name: escribirAnimacion;
+}
+
+
+@keyframes escribirAnimacion {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  @keyframes escribirAnimacion {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Ajusta según sea necesario */
+    }
+  }
+}
+.Nombre {
+  color: #FA61CC;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 55px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 170px;
+}
+
+.profesion {
+  color: rgba(255, 217, 0, 0.904);
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: escribirAnimacion;
+  animation-duration: 4s;
+  animation-timing-function: steps(40, end);
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.bienvenida {
+  margin-bottom: -80px;
+  text-align: left;
+  color: rgb(180, 179, 179);
+}
+
+.contacto {
+  margin-bottom: 30px;
+  text-align: left;
+  color: rgb(180, 179, 179);
+}
+
+.redesSociales a.linkedin,
+.redesSociales a.github {
+  color: #FA61CC;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.redesSociales {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.VictorPage a {
+  color: rgb(15, 118, 110);
+  font-weight: bold;
+}
+.profesion {
+  white-space: normal;
+}
+.contacto{
+  white-space: normal;
+}
+

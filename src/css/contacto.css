@@ -1,0 +1,54 @@
+.contactContainer {
+    margin-left: 200px;
+    height: 100vh;
+    background-color: #4d3043;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .contacto {
+    text-transform: uppercase;
+    color: #FA61CC; 
+    font-weight: bold;
+    font-size: 65px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+
+  .correo{
+    margin-bottom: 30px;
+  }
+
+  .telefono{
+    margin-bottom: 30px;
+  }
+
+  .LinkedIn{
+    margin-bottom: 60px;
+  }
+
+  .leyenda {
+    color: #FA61CC;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    .contactContainer {
+      padding: 20px; 
+      padding-top: 150px;
+    }
+  
+    .contacto {
+      font-size: 20px; 
+      margin-top: 100px; 
+      margin-bottom: 40px;
+    }
+
+    .leyenda {
+      width: 100%; 
+    }
+    
+  }

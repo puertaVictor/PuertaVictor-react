@@ -1,0 +1,39 @@
+.aboutMe {
+    margin-left: 200px;
+    height: 100vh;
+    background-color: #4d3043;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .parrafo1text {
+    margin-bottom: 55px;
+    max-width: 600px; /* Ancho máximo del texto */
+    text-align: center; /* Centrar horizontalmente */
+    color: #fff; /* Color del texto */
+    margin-top: 105px;
+  }
+  
+.emote{
+    margin-top: 25px;
+    font-weight: bold;
+    color: #FA61CC;
+}
+  .parrafo2text {
+    margin-bottom: 25px;
+    max-width: 600px; /* Ancho máximo del texto */
+    text-align: center; /* Centrar horizontalmente */
+    color: #fff; /* Color del texto */
+  }
+
+  @media (max-width: 600px) {
+    .parrafo1text {
+        margin-bottom: 10px;
+        max-width: 600px; /* Ancho máximo del texto */
+        text-align: center; /* Centrar horizontalmente */
+        color: #fff; /* Color del texto */
+        margin-top: 100px;
+      }
+  }
