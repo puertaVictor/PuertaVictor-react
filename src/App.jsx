@@ -9,7 +9,7 @@ import Experiencia from "./components/experiencia.jsx";
 
 function App() {
   return (
-    <Router basename={ProcessingInstruction.es.PUBLIC_URL}>
+    <Router>
       <div className="app-container">
         <SidebarLateral />
         <Routes>
